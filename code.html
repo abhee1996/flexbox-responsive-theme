@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <!-- <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <title>Code</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            
+            *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            }
+            body{
+                background: #ebe9e9;
+                font-family: Calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
+                line-height: 1.5;
+            }
+            .container
+                {    
+                display: flex;  
+                flex-wrap: wrap;
+                margin: 3%;
+            }
+            [class*="col-"] {
+            float: left;
+            padding: 15px;
+            }
+
+            .col-1 {flex: 8.33%;}
+            .col-2 {flex: 16.66%;}
+            .col-3 {flex: 25%;}
+            .col-4 {flex: 30%;}
+            .col-5 {flex: 41.66%;}
+            .col-6 {flex: 50%;}
+            .col-7 {flex: 58.33%;}
+            .col-8 {flex: 70%;}
+            .col-9 {flex: 75%;}
+            .col-10 {flex: 83.33%;}
+            .col-11 {flex: 91.66%;}
+            .col-12 {flex: 100%;}
+            button{
+                background: firebrick;
+              padding: 15px ;
+              border: none;
+             
+              color: white;
+            }
+/*--------------Section 1----------------------*/
+            .sec1-box1 {
+            flex: 50%;
+            padding: 10px;
+            height: 350px;
+            background: firebrick;
+        }
+        .sec1-box1 h1 {
+            padding-top: 120px;
+            text-align: center;
+            color: white;
+            font-size: 60px;
+        }
+        .sec1-box2 {
+            flex: 50%;
+            padding: 40px;
+            background: white;
+            font-size: large;
+        }
+        .sec1-box2 h5 {
+            padding: 22px 30px;
+            text-align: left;
+
+        }
+/*----------------section 2--------------- */
+            .sec2-box1{ 
+                 background: white;
+                height: 320px;
+                padding: 30px;
+            }
+            
+            .sec2-box1 button{   
+              float: right;
+            }
+            .sec2-box1 h2{  
+                color: firebrick;
+            }
+            .sec2-box2{
+                background: firebrick;
+                align-items: stretch;
+	            align-content: stretch;
+                text-align: center;
+                height: 320px;
+                padding: 30px;
+            }
+            .sec2-box1 h2, .sec2-box1 p{
+                padding: 5px;
+            }
+            .sec2-box2 p{    
+                text-align: center;
+                color: white; 
+                line-height: 1.5;
+            }
+            .sec2-box2 img{
+                border-radius: 50%;
+            }  
+            
+            /*-----------Section 3-------------*/
+            
+            .sec3-box1{
+                 flex: 50%;
+                padding: 0px;
+                height: 420px;
+            }
+            .sec3-box2{
+               flex: 50%;
+               padding: 35px; 
+               line-height: 1.5;
+               background: white;
+               text-align: center;
+               height: 420px;
+              
+            }
+            .sec3-box2 *{
+                padding: 15px;
+            }
+            .sec3-box1 img{
+                 width: 100%;
+               height: 100%;
+            }
+            .sec3-box2 h2{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                color: black;
+                text-align: center;
+            }
+            .sec3-box2 p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 100;            
+                text-align: left;
+                
+            }
+/*-----------Section 4-------------*/
+            
+            .sec4-box1{
+                flex: 70%;
+                background: white;
+               padding: 50px;
+               line-height: 1.5;
+            }
+            .sec4-box2{
+               padding: 0;  
+            }
+            .sec4-box2 img{
+               
+                width: 100%;
+               height: 100%;
+            }
+            .sec4-box1 button{
+                background: firebrick;
+              padding: 15px 25px;
+              border: none;
+              border-radius: 1px;
+              cursor: pointer;
+              color: white;
+              float: right;
+            }
+            
+            
+            .sec4-box1 h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                color: firebrick;
+                flex: 1;
+            }
+            .sec4-box1 p,.sec4-box1 h1{
+                font-family: Arial, Helvetica, sans-serif;   
+                padding: 2%;
+                font-weight: 100;    
+            }
+/*-----------Section 5-------------*/           
+            .sec5-box1{
+                padding: 0px;
+                height: 500px; 
+            }         
+            .sec5-box1 img{
+               width: 100%; 
+                height: 100%; 
+            }           
+            .sec5-box2{
+             height: 500px; 
+               text-align: center;
+              padding: 30px; 
+              background: white;
+            }
+            
+            .modal-head{
+              background: #00FFFF;
+              padding: 10px;
+              width: 100%;
+
+              text-align: center;
+              
+            }
+                       
+            .sec5-modal{
+              flex: 25%;
+              width: 40%;
+              
+              
+            }
+            .deals{
+                border: 1px solid turquoise;
+                list-style: none;
+                margin: 10px 11px 10px 10px;
+
+                padding: 0;
+                height: 420px;
+                min-width: 45%;
+            }
+            .deals  .plans{
+                background: white;
+                color: #111;
+                font-size: 24px;
+                font-family: Audiowide;
+            }
+            .deals li{
+                padding: 18px;
+                text-align: center;
+                color: #262626;
+                font-family: poppins;
+            }
+            .modal-body p{
+                margin: 10px;
+            }
+            .modal-body{
+                text-align: center;
+            }
+            .deals li button{
+            background: turquoise;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 1px;
+            }
+
+/*-----------Section 6-------------*/
+               
+            .sec6-title{
+                
+                background: firebrick;
+                padding: 40px 50px;
+                text-align: left;
+                color: white;
+                font-family: Calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: lighter;
+            }
+            .sec6-box1and2{
+                position: relative;
+                padding: 0px;
+            }
+            .sec6-form-body{
+                background: rgb(209, 203, 193);
+                height: 230px;   
+            }
+            .sec6-form-full{
+                background: white;
+                margin-top: -35px;
+                 padding: 25px;
+                width: 550px;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+            .sec6-form-full button{
+                text-align: center;
+            }
+            .sec6-form{
+               display: flex;
+                 
+           }
+            .sec6-form-p1{
+                float: left;
+            }
+            .sec6-form-p1 input, select{
+                margin: 5px 0px;
+               
+            }
+            .sec6-form-p2{
+                float: right;
+            }
+            .sec6-box3{
+                background: grey;
+                color: white;
+                font-family: Calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
+                line-height: 1.5;
+                padding: 80px 0px 30px 0px;
+                text-align: center;
+                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 3fr 3fr;
+            }
+            .col3{
+                float: left;
+                width: 100%;
+                padding: 0px; 
+            }
+            .col4{
+                float: right;
+                width: 100%;
+                padding: 0px; 
+            }
+            .sec6-foot3{
+                background: #ebe9e9;             
+                 width: 100%; 
+                text-align: center;
+            }
+            .sec6-foot1{
+                flex: 2;
+                 margin: 0px;
+                padding: 0px 50px 0 450px;
+            } 
+            .sec6-foot2{
+                flex: 2;
+                 margin-left: 0px;
+                 padding: 0px 450px 0 50px; 
+            }    
+           .sec6-footer{
+                background: grey;
+                color: white;
+                font-family: Calibri, Cochin, Georgia, Times, 'Times New Roman', serif;
+                padding: 35px 0;
+                }
+                .links-inner{
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                }
+            input[type=text],input[type=email], select ,textarea {
+              width: 80%;
+              padding: 11px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+            @media screen and (min-width: 1200px){
+                .sec4-box1,.sec4-box2{
+                    height: 560px;
+                }
+                .sec3-box1,.sec3-box2{
+                    height: 350px;
+                }
+            }
+            @media screen and (max-width: 768px){
+                .container{
+                    flex-direction: column;
+                    height: 100%;
+                }
+                .sec6-form-p1 input, select ,.sec6-form-p2 textarea{
+                    width: 100%;
+                }
+                .sec4-box2{
+                    height: 570px;
+                }
+                .sec3-box2{
+                    height: 100%;
+                    padding: 20px;
+                }
+                .sec1-box1 h1 {
+                    padding-top: 40px;
+                    height: 50%;
+                }
+                .sec1-box2{
+                    height: 50%;
+                }
+                .sec6-form{
+                   height: 100%;
+                   display: table;         
+                }
+                .sec6-form-body{
+                    height: 430px;
+                }
+                .sec6-form-full{
+                    width: 55%;
+                    text-align: center;
+                }
+                .sec6-form-full button{
+                    width: 120px;
+                }
+                .deals {
+                            margin: 10px;
+                            width: 95%;
+                            padding-bottom: 10px;
+                        }
+                    }
+            @media screen and (max-width: 480px){
+                .container{
+                    height: 100%;
+                }
+                .sec6-form-full {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                .sec6-box3{
+                    display: block;
+                }
+                
+            }
+            @media screen and (min-width: 926px){
+                
+                .deals{
+                   margin-left: 3%;
+                }
+                .sec2-box1 *{
+                    padding: 15px;
+                }
+
+                }      
+                
+            </style>
+    </head>
+    <body>
+        <!-- section 1 -->
+        <div class="container">
+            <div class="sec1-box1">
+                <h1>Magazee</h1>
+            </div>
+    
+            <div class="sec1-box2">
+                <h5>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque labore temporibus fuga atque
+                    veritatis earum odio aliquam nesciunt in pariatur id, suscipit repellendus eum ullam alias
+                    eveniet. Sed, sequi officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    necessitatibus"
+                </h5>
+            </div>
+        </div>
+        <!-- section 2 -->
+        <div class="container">
+                <div class="sec2-box1 col-6">
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit. 
+                            Neque labore temporibus aliquam nesciunt in pariatur id,
+                             suscipit repellendus eum ullam alias eveniet. Sed, sequi 
+                             officiis! Lorem ipsum dolor sit 
+                            amet consectetur adipisicing elit. Rerum necessitatibus?</p>
+                        <button type="submit">READ MORE</button>    
+                </div>
+                <div class="sec2-box2 col-6">
+                    <img src="img/image-04.jpg" >
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, repellat similique magnam fugiat nulla delectus explicabo? Et quis est asperiores!</p>
+                </div>
+                
+           
+        </div>
+        <!-- section 3 -->
+        <div class="container">
+            <!-- <div class="sec3-main"> -->
+                <div class="sec3-box1">
+                    <img src="img/image-01.jpg" >
+                </div>
+                <div class="sec3-box2">
+                   
+                        <h2>Lorem ipsum dolor</h2>
+                   
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque labore temporibus fuga atque veritatis earum odio aliquam nesciunt in pariatur id, suscipit repellendus eum ullam alias eveniet. Sed, sequi officiis! Lorem ipsum</p>
+                        <button type="submit">READ MORE</button>
+                </div>
+
+        </div>
+        <!-- section 4 -->
+        <div class="container">
+                <div class="sec4-box1 col-8">
+                        <h1>Lorem ipsum dolor</h1>
+                    
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque labore temporibus fuga atque veritatis earum odio aliquam nesciunt in pariatur id, suscipit repellendus eum ullam alias eveniet. Sed, sequi officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, deserunt quisquam veritatis cumque natus id perspiciatis. Fuga, suscipit dolores! Omnis minus, aliquid facere sapiente corrupti eveniet fuga deserunt modi labore! ipsum dolor sit amet, consectetur adipisicing elit. Animi, voluptates ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat natus laborum tenetur saepe ipsam molestias magnam voluptates, aliquid autem, enim dolores cupiditate. Sit tenetur itaque nemo eos sequi rem. ipsum dolor sit amet consectetur, adipisicing elit. Earum, velit cumqu.</p>
+                        <button type="submit">READ MORE</button>
+                </div>
+                <div class="sec4-box2 col-4">
+                    <img src="img/image-02.jpg" >
+                </div>
+           
+        </div>
+        <!-- section 5 -->
+        <div class="container">
+            
+                <div class="sec5-box1 col-4">
+                    <img src="img/image-03.jpg" >
+                </div>
+                <div class="sec5-box2 col-8">
+                    <!-- <div class="sec5-modal"> -->
+                    <ul class="deals col-5">
+                        <div class="modal-head">
+                            <li class="">Standard Plan</li>
+                            <li>($25 lier month)</p>
+                        </div>
+                        <li> 20gb Storage</li>
+                        <li> 100 Domains</li>
+                        <li>1000 Email Accounts</li>
+                        <li >
+                            <button type="submit">Sign Up</button>
+                        </li>
+                    </ul>
+                    <!-- </div>
+                    <div class="sec5-modal"> -->
+                        <ul class="deals col-5">
+                            <div class="modal-head">
+                                <li class="">Standard Plan</li>
+                                <li>($25 lier month)</p>
+                            </div>
+                            <li> 20gb Storage</li>
+                            <li> 100 Domains</li>
+                            <li>1000 Email Accounts</li>
+                            <li >
+                                <button type="submit">Sign Up</button>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
+                    <!-- <div class="sec5-modal col-4">
+                        <div class="modal-head">
+                            <h2>Standard Plan</h2>
+                            <p>($25 per month)</p>
+                        </div>
+                        <div class="modal-body">
+                            <h5>ghgh tdhv trxz</h5>
+                            <p>ihnk oksa ds</p>
+                            <p>hfg jnb vrfg</p>
+                            <p> hverabnna</p>
+                            <p>mkjn hbygfter</p>
+                        
+                            <button type="submit">Buy Now</button>
+                        </div>
+    
+                    </div>
+                    <div class="sec5-modal col-4">
+                        <div class="modal-head">
+                            <h2>Standard Plan</h2>
+                            <p>($25 per month)</p>
+                        </div>
+                        <div class="modal-body">
+                            <h5>ghgh tdhv trxz</h5>
+                            <p>ihnk oksa ds</p>
+                            <p>hfg jnb vrfg</p>
+                            <p> hverabnna</p>
+                            <p>mkjn hbygfter</p>
+                        
+                            <button type="submit">Buy Now</button>
+                        </div>
+    
+                    </div> -->
+                    
+                </div>
+        </div>
+        <!-- section 6 -->
+        <div class="container">
+            <div class="sec6-box1and2 col-12">
+                <div class="sec6-title ">
+                    <h2>Application Form</h2>
+                </div>
+                <div class="sec6-form-body">
+                     
+                    
+                </div>
+                <div class="sec6-form-full"> 
+                    <form class="sec6-form">
+                        
+                            <div class="sec6-form-p1">
+                                
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                
+                                
+                                    <input type="email" id="fname" name="firstname" placeholder="Your Email..">
+                                    <select name="Position" id="">
+                                        <option value="">Position</option>
+                                    </select>
+                                    <select name="Salary" id="">
+                                        <output value="">Salary</output>
+                                    </select>
+                                
+                            </div>
+                            <div class="sec6-form-p2">
+                               
+                                    <input type="radio" style="margin-left:10px;" value="Male" placeholder="Male"> Male
+                                    <input type="radio" style="margin-left:40px;" value="Female"> Female</input>
+                                
+                               
+                                    <textarea name="discription" id="" cols="30" rows="10"></textarea>
+                                
+                            </div>   
+                    </form>
+                    <button type="submit">Submit</button>
+                    
+                 </div> 
+            </div>
+            <div class="sec6-box3 col-12">
+                <div class="col3">
+                    <h4 class="a">Lorem ipsum dolor</h4>
+                    <p class="a">ipsum dolor sit amet</p>
+                    <p class="a">ipsum dolor sit amet</p>
+                    <p class="a">ipsum dolor sit amet</p>
+                 </div>
+                <div class="col4">
+                    <p class="b">ipsum dolor sit amet</p>
+                    <p class="b">ipsum dolor sit amet</p>
+                    <p class="b">ipsum dolor sit amet</p>
+                    <p class="b">ipsum dolor sit amet</p>
+                 </div>
+           </div>
+                </div>
+              <footer class="sec6-foot3"> 
+                    <p style="text-align: center;">
+                        Copyright @ 2020 Your Company Name | Designed by MASQ
+                    </p>
+              </footer>
+          
+        </div>   
+    </body>
+</html>
+
